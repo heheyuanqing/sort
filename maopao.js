@@ -15,6 +15,7 @@ function maopao(arr) {
 }
 */
 
+//优化
 function maopao(arr) {
     var flag = true,
         len = arr.length,

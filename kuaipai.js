@@ -15,6 +15,7 @@
     return quickSort(left).concat(provit,quickSort(right));
 }*/
 
+//优化
 function adjust(arr, start, end) {
     var provit = arr[start],
         low = start,
