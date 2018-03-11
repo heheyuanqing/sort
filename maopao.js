@@ -1,3 +1,4 @@
+/*
 function maopao(arr) {
     var len = arr.length;
     var i, j, temp;
@@ -12,6 +13,28 @@ function maopao(arr) {
     }
     console.log(arr);
 }
+*/
 
-var arr = [5, 8, 1, 7, 3, 4, 2, 0];
+function maopao(arr) {
+    var flag = true,
+        len = arr.length,
+        i;
+    while (flag) {
+        flag = false;
+        for (i = 0; i < len-1; i++) {
+
+            if (arr[i] > arr[i + 1]) {
+                temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+                flag = true;
+            }
+        }
+
+    }
+
+}
+
+var arr = [5, 8, 8,5,1,20];
 maopao(arr);
+console.log(arr);
